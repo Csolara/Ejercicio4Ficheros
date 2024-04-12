@@ -16,14 +16,13 @@ public class Inicio {
 		String rutaArchivo = "C:\\Users\\Profesor\\Desktop\\eje4.txt";
 
 		System.out.println("Introduze el numero de linea en el que desea escribir.");
-		int numeroLinea = sc.nextInt();
+		int numeroLinea = Integer.parseInt(sc.nextLine());
 
 		System.out.println("Introduze el numero de posicion en el que desea escribir.");
-		int numeroPosicion = sc.nextInt();
+		int numeroPosicion = Integer.parseInt(sc.nextLine());
 
 		System.out.println("Inserte el texto que desea escribir.");
 		String texto = sc.nextLine();	
-		sc.nextLine();
 
 		try {
 			// Leer el archivo línea por línea y guardar cada línea en un StringBuilder
